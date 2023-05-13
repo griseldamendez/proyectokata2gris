@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Web banco</title>
+</head>
+<body>
+  <form action="">
+    <h1>Inicia sesión</h1>
+    <label for="">Usuario</label>
+    <input type="text" name="usuario" id="">
+    <label for ="">Password</label>
+    <input type="password" name ="password" id="">
+    <input type="button" value="Ingresar" onclick="login (this.form)">
+  </form>
+  
+  <script>
+    function login(form){
+        if(form.usuario.value=="gris"){
+           if (form.password.value==="123"){
+               location = "principal.html";
+             
+        }else{
+          alert("tu contraseña es incorrecta");
+        }
+
+        }else{
+            alert("usuario incorrecto");
+        }
+
+    }
+
+
+    </script>
+</html>
