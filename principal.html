@@ -11,45 +11,21 @@
     <title>Web Banco</title>
 </head>
 <body>
-<!-- Uses a header that scrolls with the text, rather than staying
-  locked at the top -->
-  <div class="mdl-layout mdl-js-layout">
-    <header class="mdl-layout__header mdl-layout__header--scroll">
-      <div class="mdl-layout__header-row">
-        <!-- Title -->
-        <span class="mdl-layout-title">BanM</span>
-        
-  
-        <!-- Add spacer, to align navigation to the right -->
-        <div class="mdl-layout-spacer"></div>
-        <!-- Navigation -->
-        <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="">Depositos</a>
-          <a class="mdl-navigation__link" href="">Retiros</a>
-          <a class="mdl-navigation__link" href="">Pagos de servicios</a>
-          <a class="mdl-navigation__link" href="">Contactos</a>
 
-         
-        </nav>
-      </div>
-    </header>
-    <div class="mdl-layout__drawer">
-      <span class="mdl-layout-title">BanM</span>
-      <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="">Depositos</a>
-        <a class="mdl-navigation__link" href="">Retiros</a>
-        <a class="mdl-navigation__link" href="">Pagos de servicios</a>
-        <a class="mdl-navigation__link" href="">Contactos</a>
-
-        
-      </nav>
-    </div>
-    <h1>Bienvenida Griselda </h1>
-    <label for="">Cuenta 1 saldo disponible:</label>
-    <input type="text" name="cantidad1" id="c1" value="1200">
-    <label for="">Cuenta 2 saldo disponible:</label>
-    <input type="text" name="cantidad2" id="c2" value="800">
-    <form action="" >
+    <div class="dashboard">
+      <div class="contact-card">
+          <div class="list">
+              <div class="searching-bar">
+                  
+              </div>
+              <div class="list-container">
+                  <ul id="contacts-ul" class="contact-list">
+                      
+                    <label for="">Cuenta 1 saldo:</label>
+                    <input type="text" name="cantidad1" id="c1" value="1200">
+                    <label for="">Cuenta 2 saldo :</label>
+                    <input type="text" name="cantidad2" id="c2" value="800">
+                    <form action="" >
       
      <h2>Retiros</h2>
      <input type="text" name="" id="cant" placeholder="cantidad">
@@ -61,8 +37,10 @@
      <input type="button" value="retirar de cuenta 1" id="bt6" onclick="formula5()">
      <input type="button" value="Retirar de cuenta 2" id="bt7" onclick="formula6()">
      
+     </form>
+
      
-    </form>
+    
     <script src="./assets/js/index.js"></script>
 </body>
 </html>
