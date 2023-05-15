@@ -3,52 +3,47 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-body {
-    background-color: red;
-    padding: 20vh 25%;
-    height: 100vh;
+body{
+    font-family: sans-serif;
+    margin: 0;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
 }
 
-img {
-    width: 50px;
-    border-radius: 40px;
-    border: solid black;
-}
-
-.list-container {
-    height: 41vh;
-    overflow-y: auto;
-}
-
-.contact-card {
-    background-color: white;
-    padding: 40px;
-}
-
-.list {
-    background-color: #e0e0e0;
-}
-
-.searching-bar {
+header{
     display: flex;
-    justify-content: center;
-    padding: 10px 0;
+    height: 70px;
+    background-color: aquamarine;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
 }
-
-.contact-list {
-    list-style: none;
-}
-
-.card {
+.logo{
     display: flex;
-    margin: 10px;
+    align-items: center;
+}
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+
+}
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+
+}
+nav a:hover{
+  color: white;
 }
 
-.photo {
-    width: 20%;
-}
-
-.text {
-    width: 80%;
+@media(max-width:700px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+       padding: 10px 0px;
+    }
 }
