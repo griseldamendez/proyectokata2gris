@@ -10,44 +10,55 @@ body{
     margin: 0;
     
 }
-a{
-    text-decoration: none;
-    color: black;
+nav{
+	max-width: 1500px;
+    
+	margin: auto;
+	background-color: #333;
+	font-size: 20px;
+	margin-top: 50px;
+}
+.menu-horizontal{
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+.menu-horizontal > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: white;
+	text-decoration: none;
+}
+.menu-horizontal > li:hover{
+	background-color: red;
+}
+.menu-vertical{
+	position: absolute;
+	display: none;
+	list-style: none;
+	width: 200px;
+	background-color: rgba(0, 0, 0, .5);
+}
+.menu-horizontal li:hover .menu-vertical{
+	display: block;
+}
+.menu-vertical li:hover{
+	background-color: black;
 }
 
-header{
-    display: flex;
-    height: 70px;
-    background-color: blue;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-}
-.logo{
-    display: flex;
-    align-items: center;
-}
-.logo img{
-    height: 50px;
-    margin-right: 10px;
-
-}
-nav a{
-    font-weight: 600;
-    padding-right: 10px;
-
-}
-nav a:hover{
-  color: white;
+.menu-vertical li a{
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 15px 15px 15px 20px;
 }
 
-@media(max-width:700px){
-    header{
-        flex-direction: column;
-    }
-    nav{
-       padding: 10px 0px;
-    }
+#html{
+	margin: auto;
+	padding: 20px;
+	max-width: 900px;
+	background: white;
+
 }
 
 /*dashboard*/
@@ -76,10 +87,7 @@ nav a:hover{
 .contact-list {
     list-style: none;
 }
-.card {
-    display: flex;
-    margin: 10px;
-}
+
 
 
 
