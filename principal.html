@@ -8,34 +8,32 @@
 <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
 <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
 <link rel="stylesheet" href="./assets/css/style.css">
     <title>Web Banco</title>
 </head>
 <body>
+    
+    <header>
 
-    <nav>
-		<ul class="menu-horizontal">
-			<li><a href="#">Inicio</a></li>
-			<li>
-				<a href="#">Cursos</a>
-				<ul class="menu-vertical">
-					<li><a href="curso-html.html">Html</a></li>
-					<li><a href="#">Css</a></li>
-					<li><a href="#">Javascript</a></li>
-				</ul>
-			</li>
-			<li>
-				<a href="#">Inscripción</a>
-				<ul class="menu-vertical">
-					<li><a href="#">Anual</a></li>
-					<li><a href="#">Mensual</a></li>
-				</ul>
-			</li>
-			<li><a href="#">Contacto</a></li>
+        <div class="logo">
+            <img src="./assets/person_user.png" alt="logo user">
+            <h2 class="nombre empresa">BANML</h2>
+        </div>
+        <nav>
+            <a href="" class="nav-link">Depositos</a>
+            <a href="" class="nav-link">Retiros</a>
+            <a href="" class="nav-link">Pagos de servicios</a>
+            <a href="" class="nav-link">Contactos</a>         
+           
+            </a>
+        </nav>
+    </header>
 
-		</ul>
-	</nav>
 
+
+    
     <div class="dashboard">
         <div class="contact-card">
             <div class="list">
@@ -48,15 +46,16 @@
                     <div class="list-container">
                         <ul id="contacts-ul" class="contact-list">
                            <h2>Bienvenida Griselda</h2> 
-                          <label for="">Cuenta 1 saldo:</label>
+                          <label for="">Saldo Disponible:</label>
                           <input type="text" name="cantidad1" id="c1" value="1200">
                           <label for="">Cuenta 2 saldo :</label>
-                          <input type="text" name="cantidad2" id="c2" value="800">
+                          <input type="text" name="cantidad2" id="c2" value="900">
                           <form action="" >
             
-           <h2>Retiros</h2>
+           
            <input type="text" name="" id="cant" placeholder="cantidad">
            <hr>
+           
            <input type="button" value="Transferia de cuenta 1 a 2" id="bt2" onclick="formula()">
            <input type="button" value="Transferencia de cuenta 2 a 1" id="bt3" onclick="formula2()">
            <input type="button" value="Depositar a cuenta 1" id="bt4" onclick="formula3()">
